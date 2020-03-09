@@ -7,12 +7,29 @@ import "./styles.css";
 import Quote from "src/containers/Quote";
 
 // == Composant
-const App = () => (
-  <div className="app">
-    <button type="button">New quote</button>
-    <Quote />
-  </div>
-);
+const App = ({ isQuote, handleClick, quoteColor }) => {
+  return (
+    <div className="app">
+      <div className="button-container">
+        <button
+          className={!isQuote ? "alone-button" : ""}
+          onClick={handleClick}
+          type="button"
+          style={{ backgroundColor: quoteColor }}
+        >
+          New quote
+        </button>
+      </div>
+      <Quote />
+    </div>
+  );
+};
+
+App.propTypes = {
+  isQuote: PropTypes.bool.isRequired,
+  handleClick: PropTypes.func.isRequired,
+  quoteColor: PropTypes.string.isRequired
+};
 
 // == Export
 export default App;

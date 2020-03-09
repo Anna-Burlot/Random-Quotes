@@ -1,10 +1,11 @@
-export const INCREMENT_COUNTER = 'INCREMENT_COUNTER';
-export const DECREMENT_COUNTER = 'DECREMENT_COUNTER';
+export const HANDLE_CLICK = "HANDLE_CLICK";
+export const SAVE_QUOTE = "SAVE_QUOTE";
 
-export const increment = () => ({
-  type: INCREMENT_COUNTER,
+export const handleClick = () => ({
+  type: HANDLE_CLICK
 });
 
-export const decrement = () => ({
-  type: DECREMENT_COUNTER,
+export const saveQuote = quote => ({
+  type: SAVE_QUOTE,
+  quote
 });

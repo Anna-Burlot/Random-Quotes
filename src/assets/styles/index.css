@@ -1,27 +1,17 @@
 @import "reset";
 
-@font-face {
-  font-family: "Roboto";
-  src: url(../fonts/Roboto-Regular.ttf);
-}
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:500|Raleway:700&display=swap");
 
 /* Specific */
 body {
-  font-family: Roboto, sans-serif;
+  font-family: "Raleway", sans-serif;
   line-height: 1.6;
   color: #607d8b;
   /* #866053 ; #607d8b ; #af6800 ; #007368 ; #4e3182 ; #781b88 ; #82002c */
   font-size: 1.5rem;
-  background-color: #0a0a0a;
+  background-color: #1b1919;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: bold;
-  line-height: 1.2;
-  font-size: 1.2rem;
+p {
+  font-family: "Dancing Script", cursive;
 }

@@ -1,5 +1,5 @@
 .app {
-  width: 50vw;
+  width: 85vw;
   margin: 0 auto;
   text-align: center;
   height: 100vh;
@@ -9,29 +9,55 @@
   align-items: center;
 }
 
+@media (min-width: 900px) {
+  .app {
+    width: 65vw;
+  }
+}
+
+@media (min-width: 1227px) {
+  .app {
+    width: 50vw;
+  }
+}
+
 .app img {
   max-width: 150px;
 }
 
 button {
-  width: 7rem;
-  height: 2.5rem;
+  font-family: "Raleway", sans-serif;
+  width: 10rem;
+  height: 3.5rem;
   border-radius: 2rem;
-  background-color: #607d8b;
   border: none;
   color: #0a0a0a;
   font-weight: bold;
-  font-size: 0.7rem;
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+
+.alone-button {
+  width: 17rem;
+  height: 6.5rem;
+  font-size: 1.7rem;
 }
 
 .quote {
-  font-style: italic;
+  transition: all 1s 0.5s;
+  transition: color 0.5s 0s;
   margin: 2rem 0;
+  height: 10rem;
+  font-size: 2rem;
+}
+
+.not-displayed {
+  height: 0rem;
+  width: 0rem;
 }
 
 .author {
-  font-weight: 600;
   padding: 1rem 0;
   border-top: 1px solid;
-  width: 50%;
+  transition: color 0.5s 0s;
 }

@@ -2,11 +2,10 @@
 import React, { useEffect } from "react";
 import { render } from "react-dom";
 import { Provider } from "react-redux";
-import axios from "axios";
 
 // == Import : local
 // Composants
-import App from "src/components/App";
+import App from "src/containers/App";
 import store from "src/store";
 
 // == Render
